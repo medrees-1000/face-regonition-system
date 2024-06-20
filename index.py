@@ -1,10 +1,4 @@
-import cv2 as cv 
-import pandas as pd
-import numpy as np 
-
-
-
-web_Cam = cv.VideoCapture(0)
+import cv2 as cv
 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
 
