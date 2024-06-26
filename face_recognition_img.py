@@ -4,7 +4,7 @@ import cv2 as cv
 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
 
-people = ["Bilal", "Mohammad"]
+people = ["Bilal", "Mohammad", "Marcos Pinto"]
 
 # features = np.load('features.npy')
 # labels = np.load('labesl.npy')
@@ -14,7 +14,7 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
 
-img_path = 'C:\\Users\\idree\\Desktop\\mix of my stuff\\20200426_224234.JPG'
+img_path = 'C:\\Downloads\\people\\Marcos Pinto\\marcos_pinto.JPEG'
 img = cv.imread(img_path)
 
 
@@ -23,11 +23,11 @@ if img is None:
 else:
     print("Image loaded successfully")
 
-    resize = cv.resize(img, (700, 500), interpolation=cv.INTER_LINEAR)
+    resize = cv.resize(img, (300, 500), interpolation=cv.INTER_LINEAR)
     gray = cv.cvtColor(resize, cv.COLOR_BGR2GRAY)
     #cv.imshow('Person', gray)
 
-    faces_rect = haar_cascade.detectMultiScale(gray, 1.1, 6)
+    faces_rect = haar_cascade.detectMultiScale(gray, 1.1, 5)
 
     for (x, y, w, h) in faces_rect:
         faces_roi = gray[y:y+h, x:x+w]
