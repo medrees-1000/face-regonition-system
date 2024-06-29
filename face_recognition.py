@@ -3,7 +3,7 @@ import cv2 as cv
 
 # Loading haar and the name of the poeple 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
-people = ["bilal", "Mohammad"]
+people = ["bilal", "Mohammad", "Marcos Pinto","Sarah","Nazia Mahmud"]
   
 # Loading the yml and face_recognizer we trained 
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
@@ -21,7 +21,7 @@ while True:
     
     # Turn picture gray  
     gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-    faces_rect = haar_cascade.detectMultiScale(gray, 1.1, 4)
+    faces_rect = haar_cascade.detectMultiScale(gray, 1.1, 2)
 
     # Grabbing regen of interest 
     for (x, y, w, h) in faces_rect:

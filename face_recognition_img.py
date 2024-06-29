@@ -4,7 +4,7 @@ import cv2 as cv
 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
 
-people = ["Bilal", "Mohammad", "Marcos Pinto"]
+people = ["Bilal", "Mohammad", "Marcos Pinto","Sarah","Nazia Mahmud"]
 
 # features = np.load('features.npy')
 # labels = np.load('labesl.npy')
@@ -14,7 +14,7 @@ face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read('face_trained.yml')
 
 
-img_path = 'C:\\Downloads\\people\\Marcos Pinto\\marcos_pinto.JPEG'
+img_path = 'C:\\Downloads\\people\\Nazia Mahmud\\Nazia Mahmud.JPG'
 img = cv.imread(img_path)
 
 

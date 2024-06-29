@@ -3,7 +3,7 @@ import cv2 as cv
 import numpy as np
 
 # Load the name of the folder that you have and the poeples name with the Path
-people = ["Mohammad", "Bilal","Marcos Pinto" ]
+people = ["Mohammad", "Bilal","Marcos Pinto", "Sarah", "Nazia Mahmud" ]
 DIR = r"C:\Downloads\people"    
 
 haar_cascade = cv.CascadeClassifier('haar_face.xml')
