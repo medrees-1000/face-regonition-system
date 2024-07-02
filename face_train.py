@@ -61,5 +61,5 @@ face_recognizer.train(features, labels)
 face_recognizer.save('face_trained.yml')
 
 # Saving them as a file using numpy.save 
-#np.save('features.npy', features)
-#np.save('labesl.npy', labels)
+np.save('features.npy', features)
+np.save('labesl.npy', labels)
