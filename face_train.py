@@ -46,7 +46,7 @@ def create_train():
 create_train()
 
 
-print("trainning done ----------------")# Debugging Info
+print("Training Complete <=====================>")# Debugging Info
 
 # Turn the features and labels list to arrays 
 features = np.array(features , dtype='object')
@@ -61,5 +61,5 @@ face_recognizer.train(features, labels)
 face_recognizer.save('face_trained.yml')
 
 # Saving them as a file using numpy.save 
-np.save('features.npy', features)
-np.save('labesl.npy', labels)
+#np.save('features.npy', features)
+#np.save('labesl.npy', labels)

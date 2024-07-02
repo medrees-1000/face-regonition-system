@@ -49,7 +49,7 @@ while True:
         cv.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
     
     # Display the frame with detected faces
-    cv.imshow('Detected Faces', frame)
+    cv.imshow('Recognize The Poeple', frame)
     
     # Check for user input to stop the script (press 'A' key to exit)
     key = cv.waitKey(1)
